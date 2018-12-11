@@ -1,5 +1,10 @@
 #!/groovy
 
 node('master') {
-  bat 'echo %PATH%'
+  stage('auto-build-master'){
+    bat 'echo I am building master'
+  }
+  stage('build packages') {
+    bat 'echo %PATH%'
+  }
 }
