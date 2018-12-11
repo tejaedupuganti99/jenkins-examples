@@ -7,4 +7,7 @@ node('master') {
   stage('build packages') {
     bat 'echo %PATH%'
   }
+  stage('Deploy application') {
+    bat 'echo deploying application'
+  }
 }
